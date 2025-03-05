@@ -1,5 +1,5 @@
 
-use dioxus::prelude::*;
+use dioxus::{html::u::hidden, prelude::*};
 use gloo_net::http::Request;
 
 // use nanorand::Rng;
@@ -37,7 +37,7 @@ fn App() -> Element {
     );
 
     rsx! {
-        link { rel:"stylesheet", href: BUTTON_STYLE }
+        link { rel:"stylesheet", href: BUTTON_STYLE}
         textarea { id:"text1",placeholder:"ID:",value:id}
         button {
             id:"button1", 

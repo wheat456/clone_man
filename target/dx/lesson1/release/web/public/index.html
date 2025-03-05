@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lesson1</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  <link rel="preload" as="script" href="/./assets/lesson1-de9037ae178c2a27.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/./assets/lesson1_bg-d9c9c88163272b13.wasm" crossorigin></head>
+  <body>
+    <div id="main"></div>
+  <script>
+            // We can't use a module script here because we need to start the script immediately when streaming
+            import("/./assets/lesson1-de9037ae178c2a27.js").then(
+                ({ default: init }) => {
+                init("/./assets/lesson1_bg-d9c9c88163272b13.wasm").then((wasm) => {
+                    if (wasm.__wbindgen_start == undefined) {
+                    wasm.main();
+                    }
+                });
+                }
+            );
+            </script>
+            
+            </body>
+</html>
